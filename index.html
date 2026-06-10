@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Займ-ОН | Онлайн займы под 0%</title>
+    <title>Займы Онлайн | Лучшие предложения под 0%</title>
     <style>
         :root {
             --bg-color: #0d0e12;
@@ -17,41 +17,63 @@
             color: var(--text);
             font-family: system-ui, -apple-system, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             box-sizing: border-box;
         }
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        /* Адаптивная сетка карточек */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки на телефонах по умолчанию */
+            gap: 12px;
+            max-width: 1200px; /* Увеличено для вмещения 4-х колонок */
+            width: 100%;
+        }
+        /* Если экран шире 900px (компьютеры и ноутбуки), переключаем на 4 колонки */
+        @media (min-width: 900px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+        }
         .card {
             background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 24px;
-            max-width: 400px;
-            width: 100%;
+            border-radius: 12px;
+            padding: 16px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.4);
             border: 1px solid #232738;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .badge {
             background-color: var(--accent);
             color: #000;
             font-weight: bold;
-            padding: 6px 12px;
+            padding: 4px 8px;
             border-radius: 20px;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             display: inline-block;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            align-self: center;
         }
         .card-title {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 800;
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
         }
         .info-row {
-            margin: 20px 0;
-            font-size: 1.1rem;
+            margin: 15px 0;
+            font-size: 0.95rem;
         }
         .info-value {
             color: var(--accent);
@@ -59,8 +81,8 @@
         }
         .psk {
             color: var(--text-muted);
-            font-size: 0.85rem;
-            margin-bottom: 25px;
+            font-size: 0.75rem;
+            margin-bottom: 20px;
         }
         .btn-mfo {
             display: block;
@@ -68,9 +90,9 @@
             color: #000;
             text-decoration: none;
             font-weight: 700;
-            padding: 14px;
+            padding: 12px;
             border-radius: 8px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: transform 0.2s;
         }
         .btn-mfo:active {
@@ -80,18 +102,66 @@
 </head>
 <body>
 
-    <div class="card">
-        <span class="badge">0% НА ПЕРВЫЙ ЗАЙМ</span>
-        <div class="card-title">МФО "Займ-ОН"</div>
-        
-        <div class="info-row">
-            <span>Ставка: </span>
-            <span class="info-value">0% до 30 дней</span>
+    <h1>ТОП Займов онлайн под 0%</h1>
+
+    <div class="grid-container">
+
+        <!-- КАРТОЧКА 1 -->
+        <div class="card">
+            <div>
+                <span class="badge">0% НА ПЕРВЫЙ ЗАЙМ</span>
+                <div class="card-title">Займ-ОН</div>
+                <div class="info-row">
+                    <span>Ставка: </span>
+                    <span class="info-value">0% до 30 дней</span>
+                </div>
+                <div class="psk">ПСК: 292.000%</div>
+            </div>
+            <a href="ВАША_ССЫЛКА_1" class="btn-mfo" target="_blank" rel="noopener noreferrer">Получить</a>
         </div>
-        
-        <div class="psk">ПСК: 292.000% годовых</div>
-        
-        <a href="#" class="btn-mfo">Получить деньги</a>
+
+        <!-- КАРТОЧКА 2 -->
+        <div class="card">
+            <div>
+                <span class="badge">ВЫСОКОЕ ОДОБРЕНИЕ</span>
+                <div class="card-title">Веб-Займ</div>
+                <div class="info-row">
+                    <span>Ставка: </span>
+                    <span class="info-value">от 0% новым</span>
+                </div>
+                <div class="psk">ПСК: 292.000%</div>
+            </div>
+            <a href="ВАША_ССЫЛКА_2" class="btn-mfo" target="_blank" rel="noopener noreferrer">Получить</a>
+        </div>
+
+        <!-- КАРТОЧКА 3 -->
+        <div class="card">
+            <div>
+                <span class="badge">МОМЕНТАЛЬНО</span>
+                <div class="card-title">еКапуста</div>
+                <div class="info-row">
+                    <span>Ставка: </span>
+                    <span class="info-value">0% первый займ</span>
+                </div>
+                <div class="psk">ПСК: 292.000%</div>
+            </div>
+            <a href="ВАША_ССЫЛКА_3" class="btn-mfo" target="_blank" rel="noopener noreferrer">Получить</a>
+        </div>
+
+        <!-- КАРТОЧКА 4 -->
+        <div class="card">
+            <div>
+                <span class="badge">БЕЗ ОТКАЗА</span>
+                <div class="card-title">Займер</div>
+                <div class="info-row">
+                    <span>Ставка: </span>
+                    <span class="info-value">0% до 21 дня</span>
+                </div>
+                <div class="psk">ПСК: 292.000%</div>
+            </div>
+            <a href="ВАША_ССЫЛКА_4" class="btn-mfo" target="_blank" rel="noopener noreferrer">Получить</a>
+        </div>
+
     </div>
 
 </body>
